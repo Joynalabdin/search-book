@@ -16,6 +16,9 @@
         #error-message{
             display: none;
         }
+        #spinner{
+            display: none;
+        }
     </style>
 </head>
 <body class="bg-gray">
@@ -25,10 +28,15 @@
         <input id="search-field" type="text" class="form-control" placeholder="Search the book you want" aria-label="Recipient's username" aria-describedby="button-addon2">
         <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="button-search">Button</button>
       </div>
+      <!-- spinner -->
       <div>
-          <p class="lead" id="search" >
+        <h3 id="spinner" class="text-center" >Looding...</h3>
+      </div>
+      <!-- Search Result -->
+      <div>
+          <h1 class="text-primary text-center" id="search" >
 
-          </p>
+          </h1>
       </div>
       <!-- Not match -->
       <div class="matched text-center ">
