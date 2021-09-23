@@ -4,11 +4,49 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <title>Book Archive</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <style>
+        #error-message{
+            display: none;
+        }
+    </style>
 </head>
-<body>
-    <h1>Book Archive</h1>
+<body class="bg-gray">
+    <!-- book search area -->
+    <h3 class="text-center color">Search your favorite book</h3>
+    <div class="input-group mb-3 mx-auto w-50">
+        <input id="search-field" type="text" class="form-control" placeholder="Search the book you want" aria-label="Recipient's username" aria-describedby="button-addon2">
+        <button onclick="searchBook()" class="btn btn-outline-secondary" type="button" id="button-search">Button</button>
+      </div>
+      <div>
+          <p class="lead" id="search" >
+
+          </p>
+      </div>
+      <!-- Not match -->
+      <div class="matched text-center ">
+          <h3 id="error-message" class="text-danger">Sorry!Not found the result</h3>
+      </div>
+       <!-- book card details -->
+       <div id="book-details"  style="width: 15rem;" class="mb-5 ml-10" >
+    
+      </div>
+      <!-- Books search result -->
+      <div id="search-result" class="row row-cols-1 row-cols-md-3 g-4 search">
+      </div>
+
+      <!-- Result not found -->
+      <div id="result"  style="width: 21rem;" class="mb-5 ml-10" >
+      </div>
+
+    
 
     <script src="main.js"></script>
 </body>

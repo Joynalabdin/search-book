@@ -1,0 +1,17 @@
+.color{
+    color: goldenrod;
+}
+.search{
+    display:grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 5px;
+}
+.col{
+    background-color: rgba(226, 215, 213, 0.945);
+    border-radius: 15px;
+    text-align: center;
+    justify-content: center;
+    display:flex;
+    padding: 30px;
+    width: 250px;
+}
